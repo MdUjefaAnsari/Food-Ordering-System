@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css">
+    <script>
+        function hello() {
+            var a = document.getElementById("phone").value;
+            if (isNaN(a)) {
+                document.getElementById("err").innerHTML = "Please enter only  numeric value!";
+                return false;
+            }
+            if ((a.charAt(0) != 9) && (a.charAt(0) != 8) && (a.charAt(0) != 7) && (a.charAt(0) != 6)) {
+                document.getElementById("err").innerHTML = "What's your problem, Please enter correct number!";
+                return false;
+            }
+
+            alert("Your request is submitted successfully we are replying soon!!");
+            return false;
+
+        }
+    </script>
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="topbar">
+            <ul class="fd">
+                <li><a href="index.html"><span class="m">Mom</span><span class="f">Fee</span><span
+                            class="o">dO</span></a></li>
+                <!-- <li><a href="#">Gallery</a></li> -->
+                <!-- <li><a href="#">Collections</a></li> -->
+            </ul>
+            <ul class="favorite">
+                <!-- <li><a href="#">Order Favorite Food</a></li> -->
+                <li><a href="email.html">LogIn</a></li>
+                <li><a href="#">SignUP</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="mainsection">
+        <h1>Contact</h1>
+    </section>
+
+    <section class="fform">
+        <ul  class="first-ul">
+            <li> <h1 class="he">Contact Us</h1></li><br /><br />
+            <li><p class="par">MomFeedO is the best restaurant in Ranchi.We hava many facilities given to the customer  <br />our location is opposite of nucleus mall kuchury Ranchi</p></li><br /><br />
+            <li><p class="ph">PHONE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#160;&#160;&#160; &nbsp;&nbsp; &#160;&#160;&#160;23349-933948,+91-9876545678.</p></li><br /><br />
+            <li><p class="em">EMAIL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#160;&#160;&#160; &nbsp;&nbsp; &#160;&#160;&#160; momfeedoat@gmail.com<br />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;info@gmail.com</p></li><br /><br />
+            <li><p class="ad">ADDRESS &nbsp;&nbsp; &#160;&#160;&#160; &nbsp;&nbsp; &#160;&#160;&#160; Lalpur road, Opposite of nucleus mall Ranchi</p></li><br /><br />
+            <li><p class="an">FOLLOW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#160;&#160;&#160; &nbsp;&nbsp; &#160;&#160;&#160;<a href="https://api.whatsapp.com/send?phone=9102122407"><img src="whatsapp.png"width="30"height="30px"alt="whatsapp Me" title="whatsapp" ></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+918102112835"><img src="phone.png"width="30"height="30px"alt="call Us" title="calling"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:mdujefaansari@gmail.com"><img src="mail.png"width="30"height="30px" alt="mail"title="mail"></a></p></li>
+
+        </ul>
+       <ul class="second-ul">
+           <li><br />
+
+            <form class="form" action="l.html" method="post" name="form2" onsubmit="return hello()">
+                <input type="text" maxlength="15" minlength="4" class="name" placeholder="NAME*" required><br /><br />
+                <section id="err" style=" 
+                letter-spacing: 4px;
+                width: 600px;
+                color: rgb(251, 15, 15);
+                font-size: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 650px;"></section>
+                <input type="tel" id="phone" name="phone" minlength="10" class="phone" maxlength="10"
+                    placeholder="PHONE NO.*" required> <br /><br />
+                <input type="email" class="email" placeholder="EMAIL*" required><br /><br />
+                <textarea name="mess" class="text" placeholder="MESSAGE*" cols="30" rows="10"
+                    required></textarea><br /><br />
+                <input class="submit" type="submit" value="SEND ENQUIRY">
+            </form></li>
+       </ul>
+    </section><br /><br />
+    <section class="locate"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.297175506157!2d85.32937391494693!3d23.37746423477461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e113a1d89761%3A0x6e3727603c6a7710!2sNucleus%20Mall!5e0!3m2!1sen!2sin!4v1650304800192!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+            <!-- /////////////////////////////////here start footer\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <footer class="mainfooter">
+        <div class="heading">
+            <a href="index.html">
+                <h1><span><img width="40" height="40" src="restaurant.png" alt=""></span><span class="m">Mom</span><span
+                        class="f">Fee</span><span class="o">dO</span><span style="font-size: 5px;">&reg;</span></h1>
+            </a>
+        </div>
+        <div class="aboutus">
+            <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div><br /><br /> <br />
+        <hr style="margin-top:30px;border-width:0.4mm;width:100%;margin-left:0;border:dotted 0.1px rgb(43, 42, 42);">
+        <div class="copyrights">
+            <p>All Rights Reserved. CopyRight &COPY; www.moomfeedo.com Ltd.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

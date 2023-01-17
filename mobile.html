@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomFeedO</title>
+    <link rel="icon" type="image"href="restaurant.png">
+    <link rel="stylesheet" href="mobile.css">
+    <script>
+        function some() {
+            var a = document.getElementById("username").value;
+            if (a == "") {
+                document.getElementById("err").innerHTML = "*Please enter your mobile no.!";
+                return false;
+            }
+            if (isNaN(a)) {
+                document.getElementById("err").innerHTML = "Please enter only  numeric value!";
+                return false;
+            }
+            if ((a.charAt(0) != 9) && (a.charAt(0) != 8) && (a.charAt(0) != 7) && (a.charAt(0) != 6)) {
+                document.getElementById("err").innerHTML = "Are you dumb'please enter correct mobile no.'!";
+                return false;
+            }
+            if ((a.length > 10) || (a.length < 10)) {
+                document.getElementById("err").innerHTML = "Mobile Number must be 10 digits!";
+                return false;
+            }
+            var b = document.getElementById("password").value;
+            if (b == "") {
+                document.getElementById("err").innerHTML = "Please enter your password!";
+                return false;
+            }
+            if ((b.length < 4) || (b.length > 8)) {
+                document.getElementById("err").innerHTML = "Password must be in between 4to8!";
+                return false;
+            }
+            alert("your data successfully submitted!!!");
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+
+    <section class="wrapper">
+        <div class="topbar">
+            <ul class="fd">
+                <li><a href="index.html"><span class="m">Mom</span><span class="f">Fee</span><span
+                            class="o">dO</span></a></li>
+                <!-- <li><a href="#">Food</a></li>
+                <li><a href="#">Collections</a></li> -->
+            </ul>
+            <ul class="favorite">
+                <!-- <li><a href="#">Order Favorite Food</a></li> -->
+                <li><a href="email.html">LogIn</a></li>
+                <li><a href="signup.html">SignUP</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- fdkjfdkjf -->
+    <section class="main">
+
+        <table class="table1">
+            <form class="form" action="l.html" method="post" name="form2" onsubmit="return some()">
+                <caption class="loginhead">Login</caption>
+                <tr>
+                    <th>
+                        <div id="err"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label class="emailhead"><a href="email.html">EMAIL</a></label>
+                    </th>
+                    <th><label class="mobilehead"><a href="mobile.html">MOBILE</a></label></th>
+                </tr>
+
+                <tr></tr>
+                <tr>
+                    <td><label class="email">Mobile Number</label></td><br />
+                </tr>
+                <tr>
+                    <td><input placeholder=" Mobile Number" id="username" type="number" name="username"></td><br />
+                </tr>
+
+                <tr>
+                    <td><label class="pass">Password</label></td><br />
+                </tr>
+                <tr>
+
+                    <td><input placeholder="Password" id="password" type="password" name="password" ></td>
+                </tr>
+                <tr>
+                    <td class="forgot"><a class="forg" href="#">Forgot password?</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" class="continue" value="CONTINUE">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="new">
+                            New for MomFeedO?
+                        </label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="crt">
+                            <DIV class="create">
+                                <h5>CREATE AN ACCOUNT</h5>
+                            </DIV>
+                        </a>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </section>
+    <footer class="mainfooter">
+        <div class="heading">
+            <a href="index.html">
+                <h1><span><img width="40"height="40"src="restaurant.png" alt=""></span><span class="m">Mom</span><span class="f">Fee</span><span class="o">dO</span><span
+                    style="font-size: 5px;">&reg;</span></h1>
+            </a>
+        </div>
+        <div class="aboutus">
+            <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div><br /><br /> <br />
+        <hr style="margin-top:30px;border-width:0.4mm;width:100%;margin-left:0;border:dotted 0.1px rgb(43, 42, 42);">
+        <div class="copyrights">
+            <p>All Rights Reserved. CopyRight &COPY; www.moomfeedo.com Ltd.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

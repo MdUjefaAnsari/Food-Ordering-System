@@ -1,0 +1,606 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+.wrapper a {
+    text-decoration: none;
+    color: rgb(205, 204, 204);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.wrapper .topbar a:hover {
+    color: red;
+}
+
+.wrapper .topbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(18, 18, 21);
+    /* background-image: url("img/f1.jpg"); */
+    color: rgb(50, 49, 49);
+    line-height: 50px;
+}
+
+
+.topbar {
+    list-style: none;
+
+}
+.topbar ul {
+    list-style: none;
+}
+
+.topbar ul li ul {
+    width: 100px;
+    line-height: 10px;
+    text-align: left;
+    float: left;
+    font-weight: bold;
+    position: absolute;
+    margin-left: -200px;
+
+}
+
+.wrapper {
+    overflow: auto;
+}
+
+.topbar ul ul {
+    display: none;
+}
+
+.topbar ul ul li {
+    text-align: center;
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+.topbar ul ul li a {
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    margin-top: -20px;
+    padding: 10px;
+    background-color: rgba(186, 23, 23, 0.3);
+    background-color: rgb(1, 1, 1, 0.6);
+    width: 190px;
+    position: absolute;
+}
+
+.topbar ul li:hover>ul {
+    display:block;
+}
+
+.topbar .fd li {
+    float: left;
+    margin-left: 50px;
+    letter-spacing: 3px;
+
+}
+
+.topbar .favorite li {
+    margin-right: 30px;
+    margin-left: 30px;
+    letter-spacing: 3px;
+    margin-right: 60px;
+    float: left;
+}
+
+.wrapper .fd {
+    float: left;
+    list-style-type: none;
+    display: inline;
+
+}
+
+.wrapper .favorite {
+    float: right;
+    list-style-type: none;
+
+}
+.burgur{
+position: absolute;
+cursor: pointer;
+top: 14px;
+right: 1%;
+display: none;
+}
+.line{
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+/* complete navbar menu */
+
+.banner .heading img{
+    animation: hearts 3s linear infinite;
+}
+@keyframes heart{
+    0%{transform: scale(1); }
+    20%{transform: scale(1); }
+    40%{transform: scale(.75);  }
+    60%{transform: scale(1);}
+    80%{transform: scale(.75);  }
+   100%{transform: scale(1); }
+}
+
+.banner {
+    background-image: url("img/f1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    box-shadow: rgb(0, 255, 234);
+    /* animation: changeImage 10s infinite ; */
+    animation: changeImage 100s infinite;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url("img/f1.jpg");
+    }
+
+    10% {
+        background-image: url("img/f1.jpg");
+    }
+
+    10.01% {
+        background-image: url("img/f2.jpg");
+    }
+
+    20% {
+        background-image: url("img/f2.jpg");
+    }
+
+    20.01% {
+        background-image: url("img/f5.jpg");
+    }
+
+    30% {
+        background-image: url("img/f5.jpg");
+    }
+
+    30.01% {
+        background-image: url("img/f6.jpg");
+    }
+
+    40% {
+        background-image: url("img/f6.jpg");
+    }
+
+    40.01% {
+        background-image: url("img/f14.webp");
+    }
+
+    50% {
+        background-image: url("img/f14.webp");
+    }
+
+    50.01% {
+        background-image: url("img/f6.jpg");
+    }
+
+    60% {
+        background-image: url("img/f6.jpg");
+    }
+
+    60.01% {
+        background-image: url("img/f14.webp");
+    }
+
+    70% {
+        background-image: url("img/f14.webp");
+    }
+
+    70.01% {
+        background-image: url("img/f2.jpg");
+    }
+
+    80% {
+        background-image: url("img/f2.jpg");
+    }
+
+    80.01% {
+        background-image: url("img/f8.jpg");
+    }
+
+    90% {
+        background-image: url("img/f8.jpg");
+    }
+
+    90.01% {
+        background-image: url("img/f17.webp");
+    }
+
+    100% {
+        background-image: url("img/f18.webp");
+    }
+}
+.pop{
+    animation:hello 4s linear infinite;
+}
+@keyframes hello{
+    0%{transform:scale(1);}
+    25%{transform:scale(0.99);}
+    50%{transform:scale(1.1);}
+    75%{transform:scale(0.99);}
+    100%{transform:scale(1);}
+}
+
+.heading h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 80px;
+    margin-top: -50px;
+
+}
+.pop:hover{animation: none;}
+
+.f {
+    color: rgb(248, 11, 122);
+}
+
+.m {
+    color: rgb(0, 255, 234);
+}
+
+.o {
+    color: rgb(255, 196, 0)
+}
+
+.searchmenu {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 0px;
+}
+
+#srch {
+    padding: 15px 250px;
+    font-size: 20px;
+    border-radius: 6px 0px 0px 6px;
+    border: 0px;
+}
+
+.clk {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.al p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.button {
+    text-align: right;
+    margin-right: 299px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: -61.5px;
+
+
+}
+
+#btn {
+    padding: 1px 12px;
+    font-size: 12px;
+    border-radius: 0px 6px 6px 0px;
+    border: 0.5px solid rgb(200, 0, 255);
+    cursor: pointer;
+    background-color: black;
+}
+
+#btn:hover {
+    background-color: blue;
+}
+
+.button img {
+    height: 50px;
+    width: 50px;
+}
+
+.pop {
+    text-align: center;
+    border: 2px solid white;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 680px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(3, 3, 3, 0.6);
+   transition: width 0.5s;
+}
+
+
+.pop a {
+    color: white;
+    
+
+}
+
+.pop a:hover {
+    color: white;
+ 
+}
+
+.pop:hover {
+    background-color: rgba(249, 48, 118, 0.7);
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+/* ================ we working on destination how to deliver our services============= */
+.img1 {
+    width: 100%;
+    height: 400px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.858);
+}
+
+.img1 ul li {
+    float: left;
+    list-style: none;
+}
+
+.img1 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 210px;
+    margin-top: 20px;
+}
+
+.mypara {
+    width: 290px;
+    height: 290px;
+    text-align: center;
+    margin-left: 160px;
+    color: white;
+}
+
+.mypara p {
+    color: rgb(196, 196, 196);
+}
+
+.mypara h3 {
+    color: white;
+}
+
+.collect {
+    width: 100%;
+    height: 300px;
+}
+.collect ul li {
+    list-style: none;
+    float: left;
+}
+
+.c1 {
+    margin-left: 50px;
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.c2 {
+    margin-left: 25px;
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.c3 {
+    margin-left: 25px;
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.c4 {
+    margin-left: 25px;
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.col {
+    width: 100%;
+    margin-left: 50px;
+    height: auto;
+}
+
+.col a {
+    color: rgb(0, 0, 0);
+}
+
+.col a p {
+    color: rgb(124, 124, 124);
+}
+
+.col a:hover {
+    color: rgb(38, 112, 38);
+}
+
+.col a p:hover {
+    color: rgb(41, 129, 41);
+}
+
+/* ========================this is completed the some collection of food ============ */
+
+.someclients {
+    margin-top: 50px;
+    width: 100%;
+    height: 470px;
+    background-color: rgb(213, 235, 234);
+
+}
+
+.mainh1 {
+    margin-left: 130px;
+    padding: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    color: rgb(35, 34, 34);
+    border-left: 10px solid rgb(211, 48, 121);
+}
+
+.imga3 {
+    float: right;
+    margin-top: -220px;
+    margin-right: 200px;
+}
+
+.imga3 img {
+    height: 400px;
+    width: 400px;
+}
+
+.restlogo ul li {
+    float: left;
+    list-style: none;
+}
+
+.restlogo img {
+    width: 200px;
+    height: 100px;
+    margin-left: 23px;
+    margin-top: -30px;
+    border-radius: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+.restlogo .rest1 {
+    margin-left: 170px;
+}
+
+.restlogo .rest4 {
+    margin-left: 170px;
+}
+/* =======================closed our clients marketing=============== */
+.toprest h2{
+    padding: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.toprest{
+    width: 100%;
+    height: auto;
+    /* background-color: greenyellow; */
+}
+.toprest h2{
+    padding: 40px;
+}
+.toprest p a{
+    color:rgb(90, 90, 90);
+}
+.toprest p a:hover{
+    color: rgb(168, 166, 166);
+}
+/* =================closed to toprest restaurant which is like kfc and many====================== */
+
+
+.deliverto{
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+}
+.deliverto a{
+    color: rgb(174, 176, 177);
+}
+.deliverto h2{
+padding: 40px;
+font-family: 'Courier New', Courier, monospace;
+}
+.deliverto .cities ul{
+    list-style: none;
+    margin-left: 40px;
+}
+.deliverto .cities2 ul{
+    margin-left: 300px;
+    margin-top: -362px;
+    list-style: none;
+}
+.deliverto .cities3 ul{
+    margin-left: 600px;
+    margin-top: -362px;
+    list-style: none;
+}
+.deliverto .cities4 ul{
+    margin-left: 900px;
+    margin-top: -362px;
+    list-style: none;
+}
+.deliverto .cities5 ul{
+    margin-left: 1200px;
+    margin-top: -362px;
+    list-style: none;
+}
+/* ========================closed cities ================== */
+
+.mainfooter{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+   
+}
+.mainfooter .heading{
+    padding: 45px 0px 24px 0px;
+    width: 100px;
+}
+.mainfooter ul {
+    list-style: none;
+}
+.mainfooter .aboutus ul li{
+    float: left;
+    margin-left: 40px;
+}
+.aboutus ul li a{
+    font-family: calibri;
+    font-size: 15px;
+    color: rgb(133, 133, 133);
+    
+}
+.aboutus ul li a:hover{
+    color:none;
+}
+.mainfooter .copyrights{
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(148, 148, 148);
+    font-family: calibri;
+    letter-spacing: 2px;
+    margin-top:25px;
+}
+/* ========================footer is completed================== */
+@media only screen and (max-width:1000px) {
+    .topbar ul ul li {
+        width: 50%;
+    }
+    .burgur{
+        display: block;
+    }
+}
